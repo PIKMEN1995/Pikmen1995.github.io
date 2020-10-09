@@ -1,15 +1,18 @@
 body {
   text-align: center;
-  margin: 3em 1em 3em 1em;
+  margin: 2em 0em 2em 0em;
   background-color: #595959;
   color: #999999;
 }
 h1 {
   font-size: 1in;
-  padding: 20px 0px 0px 0px;
 }
 .AlarmOn {
+  padding: 0 0 1em 0;
+}
+.AlarmOff {
   color: black;
+  padding: 1em 0 0 0;
 }
 small {
   color: #737373;
@@ -19,7 +22,7 @@ small {
   text-align: center;
 }
 .mainarea {
-  margin:  30px 30px 30px 30px;
+  margin:  1em 30px 0em 30px;
 }
 .switch {
   position: relative;
@@ -46,9 +49,6 @@ small {
   top: 8px;
   left: 8px;
   transition: all 0.5s;
-}
-.checkbox:checked + body {
-  background-color: white;
 }
 .checkbox:checked + .switch::after {
   left : 168px;
