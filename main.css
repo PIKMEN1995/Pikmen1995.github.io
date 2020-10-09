@@ -1,0 +1,64 @@
+body {
+  text-align: center;
+  margin: 3em 1em 3em 1em;
+  background-color: #595959;
+  color: #999999;
+}
+h1 {
+  font-size: 1in;
+  padding: 20px 0px 0px 0px;
+}
+.AlarmOn {
+  color: black;
+}
+small {
+  color: #737373;
+}
+.description {
+  font-size: 2em;
+  text-align: center;
+}
+.mainarea {
+  margin:  30px 30px 30px 30px;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 320px;
+  height: 160px;
+  background-color: #262626;
+  border-radius: 80px;
+  transition: all 0.3s;
+  transform: rotate(270deg);
+  margin: 0px 2em 0px 2em;
+}
+.switch::after {
+  content: '';
+  position: absolute;
+  width: 144px;
+  height: 144px;
+  border-radius:50%;
+  background-color: #999999;
+  background-image: url(./Sleep.gif);
+  background-size: 250%;
+  background-position: center;
+  transform: rotate(90deg);
+  top: 8px;
+  left: 8px;
+  transition: all 0.5s;
+}
+.checkbox:checked + body {
+  background-color: white;
+}
+.checkbox:checked + .switch::after {
+  left : 168px;
+  background-image: url(./Alarm.gif);
+  background-size: 110%;
+  transform: rotate(90deg);
+}
+.checkbox:checked + .switch {
+  background-color: #262626;
+}
+.checkbox {
+  display : none;
+}
