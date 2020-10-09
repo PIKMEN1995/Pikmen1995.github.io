@@ -39,7 +39,7 @@ small {
   height: 144px;
   border-radius:50%;
   background-color: #999999;
-  background-image: url(./Sleep.gif);
+  background-image: url(sleep.gif);
   background-size: 250%;
   background-position: center;
   transform: rotate(90deg);
@@ -52,7 +52,7 @@ small {
 }
 .checkbox:checked + .switch::after {
   left : 168px;
-  background-image: url(./Alarm.gif);
+  background-image: url(alarm.gif);
   background-size: 110%;
   transform: rotate(90deg);
 }
